@@ -6,7 +6,7 @@
 # separate terms of service, privacy policy, and support
 # documentation.
 
-name: 3d Object Calculations
+name: 3dObjectCalculations
 
 on:
   release:

@@ -294,8 +294,11 @@ def pentagonal_prism_vol(base_edge, height):
     return pentagonal_prism_final
 
 def torus_vol(major_radius, minor_radius):
-    torus_final = (PI * (minor_radius ** 2)) * (2 * PI * major_radius)
-    return torus_final
+    if minor_radius >= major_radius:
+        print("Error: major radius must be bigger than the minor radius")
+    else:
+        torus_final = (PI * (minor_radius ** 2)) * (2 * PI * major_radius)
+        return torus_final
 
 def ellipsoid_vol(a_axis, b_axis, c_axis):
     ellipsoid_final = FOUR_THIRDS * PI * a_axis * b_axis * c_axis
